@@ -5,3 +5,4 @@ This folder is for all self contained scripts.
 - .exe
 - .vba
 - some .js
+- .sh (Shell scripts for linux subsystem)
