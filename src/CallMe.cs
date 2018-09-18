@@ -18,7 +18,7 @@ class Program{
 
 	public static bool Maybe(){
 		Random rnd = new Random();
-		int chance = rnd.Next(1);
+		int chance = rnd.Next(10);
 
 		if(chance < 5){
 			return true;
