@@ -7,7 +7,8 @@ set /a kb = %byte% * 1024
 set /a mb = %kb% * 1024
 set /a gb = %mb% * 1024
 
-set /a amount = %1 * %%3%
+set /a unit = %3
+set /a amount = %1 * % %3 %
 :main
 echo FILLING "%1" WITH %2 %3 OF DATA
 FOR /L %%A IN (1,1, %amount%) DO (
