@@ -15,7 +15,8 @@ helptxt = [
 ]
 
 if(sys.argv[1] == "/?"):
-  helptxt[for line in txt print(line)]
+  for line in helptxt: 
+    print(line)
   quit()
 
 byte = 1
