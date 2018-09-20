@@ -1,16 +1,21 @@
 import sys
+version = "v0.1.2"
+
+helptxt = [
+  version,
+  "=======================USAGE========================",
+  "To use this command: fill [filename] [amount] [unit]",
+  "unit - the smallest unit [byte, kb, mb, gb, gb100]",
+  "=======================DEMO=========================",
+  "EXAMPLE: fill test.bin 10 kb",
+  "This will fill 'test.bin' with 10 kilobytes",
+  "=======================NOTES========================",
+  "WARNING: Files larger than 100mb could take considerable time",
+  "NOTE: These files are filled with binary data and are not text viewable",
+]
 
 if(sys.argv[1] == "/?"):
-  print("v0.1.2")
-  print("=======================USAGE========================")
-  print("To use this command: fill [filename] [amount] [unit]")
-  print("unit - the smallest unit [byte, kb, mb, gb, gb100]")
-  print("=======================DEMO=========================")
-  print("EXAMPLE: fill test.bin 10 kb")
-  print("This will fill 'test.bin' with 10 kilobytes")
-  print("=======================NOTES========================")
-  print("WARNING: Files larger than 100mb could take considerable time")
-  print("NOTE: These files are filled with binary data and are not text viewable")
+  helptxt[for line in txt print(line)]
   quit()
 
 byte = 1
